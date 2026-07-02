@@ -40,24 +40,7 @@ jobs:
         run: |
           cd factory
           python MainWork.py
-      
-      #提交更新
-      - name: commit
-        run: |
-          git config --global user.email ${USER_EMAIL}
-          git config --global user.name ${USER_NAME}
-          git add .
-          git commit -m "程序自动更新规则" -a
-        env:
-          USER_EMAIL: ${{ secrets.USER_EMAIL }}
-          USER_NAME: ${{ secrets.USER_NAME }}
-      
-      #推送更新至github
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN }}
-      
+
 #      #推送更新至gitee
 #      - name: Mirror the Github organization repos to Gitee.
 #        uses: wearerequired/git-mirror-action@master
