@@ -17,7 +17,7 @@ out_fname='../QuantumultX/rules/GMedia.list'
 out_fname2='./rtmp/GMediaTmp.list'
 
 def download():
-    DATA_URL='https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/Filter/GMedia.list'
+    DATA_URL='https://raw.githubusercontent.com/YangJNan/QuantumultX/master/Filter/GMedia.list'
     DATA_URL2='https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/GlobalMedia/GlobalMedia.list'
     if os.path.exists(in_fname):
         os.remove(in_fname)
